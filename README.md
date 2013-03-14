@@ -1,16 +1,16 @@
 #iFrame Navigator lib
 
 Since main window and iframes share same window.history data, using window.back() or window.forward() may give you
-unexpected results, ex. whole page reloaded or loading page out side of an iframe. If you would like to take control
+unexpected results, ex. whole page reloaded or loading page outside of an iframe. If you would like to take control
 only on certain iFrame, then use this lib in following way:
 
-var $iframe = $('iframe')
-var iNav = new IframeNavigator($iframe)
+    var $iframe = $('iframe')
+    var iNav = new IframeNavigator($iframe)
 
-iNav.forward()
-iNav.back()
-iNav.refresh()
-iNav.goToUrl('http://example.com')
+    iNav.forward()
+    iNav.back()
+    iNav.refresh()
+    iNav.goToUrl('http://example.com')
 
 Copyright (c) 2013 Tomasz Borowski (http://tbprojects.pl)
 
